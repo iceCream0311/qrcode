@@ -1,0 +1,23 @@
+body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,p {margin: 0;font-family:Microsoft YaHei; }
+ul,ol { padding: 0;}
+ul li,ol li{list-style: none}
+strong{font-weight: normal;}
+button,select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+}
+
+/*清楚浮动*/
+.clear:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+
+.clear {
+    zoom: 1
+}

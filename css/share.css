@@ -1,0 +1,7 @@
+body{background: url(../images/share_bg.png) no-repeat;background-size: cover;padding-top: 8.7rem;padding-bottom:1rem;text-align: center;}
+p{color: #fff;}
+.name,.yunshi{font-size: 0.57rem;line-height: 0.9rem}
+.yunsh-big{font-size: 0.86rem;color: #faef44;line-height: 1.3rem}
+.detile{font-size: 0.32rem;}
+#code{padding:.2rem;background-color: #fff;width: 4.3rem;height:4.3rem;margin: 0.5rem auto}
+#code img{width: 100%}

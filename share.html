@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/share.css">
+        <script type="text/javascript" src="js/fontsize.js"></script>
+    </head>
+    <body>
+      <p class="name">刘晓东</p>
+      <p class="yunshi">2017年的整体运势超过了</p>
+      <p class="yunsh-big"><span id="rodom_number">98</span>%的人</p>
+      <div id="code"></div>
+      <p class="detile">长按图片识别二维码进入测试页面</p>
+      <p class="detile">你也赶紧测一下吧</p>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+    /* qrcode调用生成二维码*/
+       $("#code").qrcode({
+         render: "canvas",
+         width: 250, //宽度
+         height:250, //高度
+         text:'http://yf.huoxingyuny.cn/new_fate_1/index.html?siteId=105' //任意内容
+       });
+
+       $("#code").html(canvasToImage(document.getElementById("code").getElementsByTagName("canvas")[0]))
+
+
+    })
+    function canvasToImage(canvas){
+        var image = new Image();
+      image.src = canvas.toDataURL("image/png");
+      return image;
+      }
+    </script>
+    </body>
+</html>
